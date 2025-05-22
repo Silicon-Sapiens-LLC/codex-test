@@ -15,6 +15,22 @@ export default function Layout() {
               Home
             </Link>
           </li>
+          <li>
+            <Link
+              to="/dashboard"
+              className={location.pathname.startsWith('/dashboard') ? 'font-bold' : ''}
+            >
+              Dashboard
+            </Link>
+          </li>
+          <li>
+            <Link
+              to="/users"
+              className={location.pathname.startsWith('/users') ? 'font-bold' : ''}
+            >
+              Users
+            </Link>
+          </li>
         </ul>
       </aside>
       <main className="flex-1 p-4">
