@@ -11,4 +11,7 @@ npm install
 npm run dev
 ```
 
-The home page contains a `Home` menu item that shows a welcome message.
+After logging in you can access additional menu items:
+
+- **Dashboard** – displays a couple of fake charts rendered with [ECharts](https://echarts.apache.org/).
+- **Users** – shows a list of sample users with the ability to add, edit and delete entries using modal dialogs.
