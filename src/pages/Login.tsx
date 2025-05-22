@@ -19,28 +19,33 @@ export default function Login() {
   }
 
   return (
-    <div className="flex items-center justify-center h-screen">
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <input
-            type="text"
-            placeholder="Username"
-            value={username}
-            onChange={e => setUsername(e.target.value)}
-            className="border p-2"
-          />
-        </div>
-        <div>
-          <input
-            type="password"
-            placeholder="Password"
-            value={password}
-            onChange={e => setPassword(e.target.value)}
-            className="border p-2"
-          />
-        </div>
-        <Button type="submit">Login</Button>
-      </form>
+    <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <div className="bg-white shadow-lg rounded p-8 w-80">
+        <h1 className="text-2xl font-bold mb-6 text-center">Admin Login</h1>
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <div>
+            <input
+              type="text"
+              placeholder="Username"
+              value={username}
+              onChange={e => setUsername(e.target.value)}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <div>
+            <input
+              type="password"
+              placeholder="Password"
+              value={password}
+              onChange={e => setPassword(e.target.value)}
+              className="border p-2 rounded w-full"
+            />
+          </div>
+          <Button className="w-full" type="submit">
+            Login
+          </Button>
+        </form>
+      </div>
     </div>
   )
 }
